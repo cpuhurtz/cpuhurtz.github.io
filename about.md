@@ -24,8 +24,9 @@ blog will hopefully evolve into a creative outlet that explores more than "DoD-c
 	<li>Opportunities for Giving Back to the Community</li>
 	<li>Malware && Code</li>
 	<li>RF, SDR, and the Black Magic Inbetween</li>
+	<li>Literature and Books w/ Solid Lessons</li>
 	<li>Whatever else I feel like tossing into the ring.</li>
 </ul>
 
-<p>Cheers,
+<p>Cheers,<br>
  - CHz</p>
