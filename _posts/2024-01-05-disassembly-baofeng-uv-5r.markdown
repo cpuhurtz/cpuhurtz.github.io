@@ -27,7 +27,7 @@ Prolific within the intersection between amateur radio and civilian tactical gro
 
 ## Disassembly
 
-I don't take credit for the [disassembly][1] video; it was particularly useful for tearing down the coax port / feed line; prior to removing the UV-5R's face, various header components had to be removed or at least loosened in order for me to have access to the board. I resorted to using an iFixit Precision Toolkit which was more than enough for my purposes. I recommend following this video to the 'T' if you intend on reassembling the radio; my method was clumsy at best, so a couple of components (namely the coax and LED) were slightly bent, but not horrifically so. Successful disassembly roughly results in:
+I don't take credit for the [disassembly][1] video [1]; it was particularly useful for tearing down the coax port / feed line; prior to removing the UV-5R's face, various header components had to be removed or at least loosened in order for me to have access to the board. I resorted to using an iFixit Precision Toolkit which was more than enough for my purposes. I recommend following this video to the 'T' if you intend on reassembling the radio; my method was clumsy at best, so a couple of components (namely the coax and LED) were slightly bent, but not horrifically so. Successful disassembly roughly results in:
 
 * a backplate with spongy contact pads
 * a rubber button cutout
@@ -52,5 +52,7 @@ A lot of this is stuff you can find on forums across the internet, ranging from 
 ---
 
 ## References
+
+[1] <https://www.youtube.com/watch?v=uvRocFQHOy0>
 
 [1]: https://www.youtube.com/watch?v=uvRocFQHOy0
