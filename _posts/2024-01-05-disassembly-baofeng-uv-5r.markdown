@@ -15,7 +15,7 @@ description: Rough overview of the disassembly of a Baofeng UV-5R, followed by t
 
 ## Summary:
 
-Prolific within the intersection between amateur radio and civilian tactical groups, the Baofeng UV-5R is an exceptional first choice for anyone trying to understand programmable radios and their application within the field. I rarely use mine, if at all, so I figured it's better suited in the queue for teardown. A preliminary glance at programming / operation of the radio can be found [here][0] \[0\]. This post is less about the disassembly and more about the "having the option to do it", and perhaps introducing others to identifying integrated components 
+Prolific within the intersection between amateur radio and civilian tactical groups, the Baofeng UV-5R is an exceptional first choice for anyone trying to understand programmable radios and their application within the field. I rarely use mine, if at all, so I figured it's better suited in the queue for teardown. A preliminary glance at programming / operation of the radio can be found [here][0] \[0\]. This post is less about the disassembly and more about the "having the option to do it", the basic idea behind identifying integrated components on a board, and lifting binaries from EEPROMs.
 
 ## Overview
 - [Disassembly](#disassembly)
