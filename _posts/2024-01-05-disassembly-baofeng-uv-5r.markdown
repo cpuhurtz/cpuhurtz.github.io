@@ -15,7 +15,7 @@ description: Rough overview of the disassembly of a Baofeng UV-5R, followed by t
 
 ## Summary:
 
-Prolific within the intersection between amateur radio and civilian tactical groups, the Baofeng UV-5R is an exceptional first choice for anyone trying to understand programmable radios and their application within the field. I rarely use mine, if at all, so I figured it's better suited in the queue for teardown.
+Prolific within the intersection between amateur radio and civilian tactical groups, the Baofeng UV-5R is an exceptional first choice for anyone trying to understand programmable radios and their application within the field. I rarely use mine, if at all, so I figured it's better suited in the queue for teardown. A preliminary glance at programming / operation of the radio can be found [here][0] \[0\].
 
 ## Overview
 - [Disassembly](#disassembly)
@@ -45,16 +45,19 @@ A lot of this is stuff you can find on forums across the internet, ranging from 
 
 ## Components
 
-Really helpful [resource][2] for identifying integrated component datasheets. A lot of the circuitry was identified [here][3], to include components of interest. But it's still worth noting the changes here. The most interesting ones here (of the ones I could actually discern):
+Really helpful [resource][2] for identifying integrated component datasheets \[2\]. A lot of the circuitry was identified [here][3] \[3\], to include components of interest. But it's still worth noting the changes here. The most interesting ones here (of the ones I could actually discern):
 
 * KDHM8F2K6 8-Bit Microcontroller, Serial No. 3SGV200391-Q 2034
-    * 
+    * Still unsure of what kind of microcontroller this is, but it's the brain of the unit. Some affordable 8-bit RISC processor would be my guess.
 * K24C64 EEPROM, Serial No. 2050TFX
+    * Two-wire serial EEPROM. I2C EEPROM supports a maximum clock frequency of 400 KHz. Data is organized in eight 8192 bit blocks \[4\]. 
 * AT1688, Serial No. A459S922
-* LT-ZY2012, Serial No. 2012
+    * No direct references, but given placement on board (proximal to push-to-talk button), might be a transceiver chip.
+    * In separate reference, found this:  чип трансивера на три диапазона, но увы диапазоны 200-260 МГц не добавлены в рацию
+        * Translates to ... Transceiver chip for three bands, excluding 200-260 MHz.
+* LT-ZY2012, Serial No. 2012; unidentified.
 * TDA2822A, Serial No. ZXAX050
-
-
+    * Monolithic integrated audio amplifier in an 8-pin plastic dual in-line package, designed for portable cassette players and radios \[5\].
 
 ---
 
@@ -64,10 +67,16 @@ Really helpful [resource][2] for identifying integrated component datasheets. A 
 
 ## References
 
-\[1\] <https://www.youtube.com/watch?v=uvRocFQHOy0>
-\[2\] <https://www.alldatasheet.com/>
-\[3\] <https://www.allaboutcircuits.com/news/teardown-tuesday-baofeng-amateur-radio-transceiver/>
+\[0\] <https://wiki.radioreference.com/index.php/Baofeng_UV-5R> <br>
+\[1\] <https://www.youtube.com/watch?v=uvRocFQHOy0> <br>
+\[2\] <https://www.alldatasheet.com/> <br>
+\[3\] <https://www.allaboutcircuits.com/news/teardown-tuesday-baofeng-amateur-radio-transceiver/> <br>
+\[4\] <https://datasheet.lcsc.com/lcsc/1808091831_Hua-Hong-NEC-K24C32_C173181.pdf> <br>
+\[5\] <https://www.digchip.com/datasheets/parts/datasheet/670/TDA2822A-pdf.php> <br>
 
+[0]: https://wiki.radioreference.com/index.php/Baofeng_UV-5R
 [1]: https://www.youtube.com/watch?v=uvRocFQHOy0
 [2]: https://www.alldatasheet.com/
 [3]: https://www.allaboutcircuits.com/news/teardown-tuesday-baofeng-amateur-radio-transceiver/
+[4]: https://datasheet.lcsc.com/lcsc/1808091831_Hua-Hong-NEC-K24C32_C173181.pdf
+[5]: https://www.digchip.com/datasheets/parts/datasheet/670/TDA2822A-pdf.php
