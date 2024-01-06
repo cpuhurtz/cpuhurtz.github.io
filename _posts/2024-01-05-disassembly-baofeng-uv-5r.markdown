@@ -41,7 +41,7 @@ I don't take credit for the [disassembly][1] video \[1\]; it was particularly us
 
 A lot of this is stuff you can find on forums across the internet, ranging from RU to JP.
 
-![Markdowm Image][/assets/images/overview-of-uv-5r.PNG]
+![UV-5R Disassembly][/assets/images/overview-of-uv-5r.PNG]
 
 ---
 
@@ -61,7 +61,7 @@ Really helpful [resource][2] for identifying integrated component datasheets \[2
 * TDA2822A, Serial No. ZXAX050
     * Monolithic integrated audio amplifier in an 8-pin plastic dual in-line package, designed for portable cassette players and radios \[5\].
 
-![Markdowm Image][/assets/images/uv-5r-components.PNG]
+![UV-5R Main Components][/assets/images/uv-5r-components.PNG]
 
 ---
 
