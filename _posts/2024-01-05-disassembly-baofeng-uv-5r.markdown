@@ -1,4 +1,4 @@
-![image](https://github.com/cpuhurtz/cpuhurtz.github.io/assets/83088408/13667fcd-a724-49fc-91b9-8376beec3c34)![image](https://github.com/cpuhurtz/cpuhurtz.github.io/assets/83088408/fbd33309-c089-451a-86b9-2534a791235f)---
+---
 title: "Basic Disassembly of the Baofeng UV-5R"
 layout: post
 date: 2024-01-05 20:35
