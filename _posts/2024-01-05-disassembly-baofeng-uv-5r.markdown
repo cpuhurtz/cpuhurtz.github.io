@@ -41,11 +41,13 @@ I don't take credit for the [disassembly][1] video \[1\]; it was particularly us
 
 A lot of this is stuff you can find on forums across the internet, ranging from RU to JP.
 
+![Markdowm Image][/assets/images/overview-of-uv-5r.PNG]
+
 ---
 
 ## Components
 
-Really helpful [resource][2] for identifying integrated component datasheets \[2\]. A lot of the circuitry was identified [here][3] \[3\], to include components of interest. But it's still worth noting the changes here. The most interesting ones here (of the ones I could actually discern):
+Really helpful [resource][2] for identifying integrated component datasheets \[2\]. A lot of the circuitry was identified [here][3] \[3\], to include components of interest. It's worth noting the differences between the models, but the overall function of the radio should not change. The most interesting ones I identified (of the ones I could actually discern):
 
 * KDHM8F2K6 8-Bit Microcontroller, Serial No. 3SGV200391-Q 2034
     * Still unsure of what kind of microcontroller this is, but it's the brain of the unit. Some affordable 8-bit RISC processor would be my guess.
@@ -58,6 +60,8 @@ Really helpful [resource][2] for identifying integrated component datasheets \[2
 * LT-ZY2012, Serial No. 2012; unidentified.
 * TDA2822A, Serial No. ZXAX050
     * Monolithic integrated audio amplifier in an 8-pin plastic dual in-line package, designed for portable cassette players and radios \[5\].
+
+![Markdowm Image][/assets/images/uv-5r-components.PNG]
 
 ---
 
