@@ -15,4 +15,26 @@ description: Rough overview of the disassembly of a Baofeng UV-5R, followed by t
 
 ## Summary:
 
-You can pick as item to see how to apply in markdown.
+Prolific within the intersection between amateur radio and civilian tactical groups, the Baofeng UV-5R is an exceptional first choice for anyone trying to understand programmable radios and their application within the field. I rarely use mine, if at all, so I figured it's better suited in the queue for teardown.
+
+#### Overview
+- [Disassembly](#disassembly)
+- [Components](#components)
+- [Lifting Firmware](#lifting-firmware)
+- [References](#references)
+
+---
+
+## Disassembly
+
+---
+
+## Components
+
+---
+
+## Lifting Firmware
+
+---
+
+## References
