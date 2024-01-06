@@ -15,7 +15,7 @@ description: Rough overview of the disassembly of a Baofeng UV-5R, followed by t
 
 ## Summary:
 
-Prolific within the intersection between amateur radio and civilian tactical groups, the Baofeng UV-5R is an exceptional first choice for anyone trying to understand programmable radios and their application within the field. I rarely use mine, if at all, so I figured it's better suited in the queue for teardown. A preliminary glance at programming / operation of the radio can be found [here][0] \[0\].
+Prolific within the intersection between amateur radio and civilian tactical groups, the Baofeng UV-5R is an exceptional first choice for anyone trying to understand programmable radios and their application within the field. I rarely use mine, if at all, so I figured it's better suited in the queue for teardown. A preliminary glance at programming / operation of the radio can be found [here][0] \[0\]. This post is less about the disassembly and more about the "having the option to do it", and perhaps introducing others to identifying integrated components 
 
 ## Overview
 - [Disassembly](#disassembly)
@@ -36,8 +36,8 @@ I don't take credit for the [disassembly][1] video \[1\]; it was particularly us
 * a volume dial
 * butt plate (also plastic in composition)
 * a speaker which is glued to the front face of the radio
-* a wire which is soldered between the spearker and contact patches on the circuit board
-* and the circuit board itself ...
+* a wire which is soldered between the speaker and contact patches on the circuit board
+* of course, the circuit board itself.
 
 A lot of this is stuff you can find on forums across the internet, ranging from RU to JP.
 
@@ -52,7 +52,8 @@ Really helpful [resource][2] for identifying integrated component datasheets \[2
 * KDHM8F2K6 8-Bit Microcontroller, Serial No. 3SGV200391-Q 2034
     * Still unsure of what kind of microcontroller this is, but it's the brain of the unit. Some affordable 8-bit RISC processor would be my guess.
 * K24C64 EEPROM, Serial No. 2050TFX
-    * Two-wire serial EEPROM. I2C EEPROM supports a maximum clock frequency of 400 KHz. Data is organized in eight 8192 bit blocks \[4\]. 
+    * Two-wire serial EEPROM (electrically erasable programmable read-only memory).
+    * I2C EEPROM supports a maximum clock frequency of 400 KHz. Data is organized in eight 8192 bit blocks \[4\]. 
 * AT1688, Serial No. A459S922
     * No direct references, but given placement on board (proximal to push-to-talk button), might be a transceiver chip.
     * In separate reference, found this:  чип трансивера на три диапазона, но увы диапазоны 200-260 МГц не добавлены в рацию
@@ -66,6 +67,28 @@ Really helpful [resource][2] for identifying integrated component datasheets \[2
 ---
 
 ## Lifting Firmware
+
+We've identified our EEPROM component, so we leverage our data sheet to identify form factor and pinout configuration. Looks something like this:
+
+![UV-5R Main Components](/assets/images/k24c64-pinout.PNG)
+
+Let's scrutinize our EEPROM some more to figure out where pin 1 is:
+![UV-5R Main Components](/assets/images/k24c64-pin1.PNG)
+
+Now we formulate some kind of plan for lifting the firmware itself. Fortunately we have all the equipment we need. If we didn't, we might consider something like this:
+
+* XGecu Pro T48 Programmer.
+* Multimeter tips / testing kit.
+* EEPROM adapters for the T48 programmer.
+* If we chose to use a lab bench power supply, we'd consider using plungers, wires, and leads.
+    * The 8-pin SOIC test clips are roughly analogous to alligator clips that attach nicely to the 8-pin EEPROM on the board.
+    * The pins at the top of the 8-pin testing clip give pin-by-pin access which we could wire up however we'd like.
+    * Possibly need electrical tape for binding the "pin extensions" onto the leads (for example, for serial interface or Vcc / GND from the bench power supply).
+    * We might consider this option if we didn't have EEPROM adapters, and if we only had pins and datasheets to go off of.
+
+Thankfully the T48 simplifies all of this...
+
+\[TODO - Take pictures of setup, software, and data dump from EEPROM\]
 
 ---
 
