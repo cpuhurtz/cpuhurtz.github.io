@@ -86,9 +86,14 @@ Now we formulate some kind of plan for lifting the firmware itself. Fortunately 
     * Possibly need electrical tape for binding the "pin extensions" onto the leads (for example, for serial interface or Vcc / GND from the bench power supply).
     * We might consider this option if we didn't have EEPROM adapters, and if we only had pins and datasheets to go off of.
 
-Thankfully the T48 simplifies all of this...
+Thankfully the T48 simplifies all of this... Quick overview of the hardware, featuring the T48 Programmer, SOIC adapter, wires for the pin-out configuration, and the clip which attaches to the EEPROM on the board:
 
-\[TODO - Take pictures of setup, software, and data dump from EEPROM\]
+![UV-5R Main Components](/assets/images/setup1.jpg)
+![UV-5R Main Components](/assets/images/aligator-clip.jpg)
+
+The T48 Programmer interfaces with a host / virtual machine over USB 2.0, Type B; configuration looks something like this with the wires matching up between the SOIC adapter pin-out and the EEPROM on the board itself. I used the reference above to guide wire placement.
+
+![UV-5R Main Components](/assets/images/Xgecu-interface.jpg)
 
 ---
 
