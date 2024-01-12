@@ -126,8 +126,8 @@ A quick review of the binary contents leads me to believe that this is the stora
 \[3\] <https://www.allaboutcircuits.com/news/teardown-tuesday-baofeng-amateur-radio-transceiver/> <br>
 \[4\] <https://datasheet.lcsc.com/lcsc/1808091831_Hua-Hong-NEC-K24C32_C173181.pdf> <br>
 \[5\] <https://www.digchip.com/datasheets/parts/datasheet/670/TDA2822A-pdf.php> <br>
-\[6\] <http://www.xgecu.com/EN/index.html>
-\[7\] <https://chirp.danplanet.com/projects/chirp/wiki/Home>
+\[6\] <http://www.xgecu.com/EN/index.html> <br>
+\[7\] <https://chirp.danplanet.com/projects/chirp/wiki/Home> <br>
 
 [0]: https://wiki.radioreference.com/index.php/Baofeng_UV-5R
 [1]: https://www.youtube.com/watch?v=uvRocFQHOy0
